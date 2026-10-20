@@ -1,163 +1,290 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f0f4f8;
-        color: #333333;
-        margin: 30px;
-    }
-
-    h1 {
-        color: #145da0;
-        text-align: center;
-    }
-
-    h2 {
-        color: #247ba0;
-    }
-
-    img {
-        border-radius: 50%;
-    }
-</style>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Mohamad Ramdan Oktaviyadi</title>
-    
-<meta name="referrer" content="strict-origin-when-cross-origin">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e1e2e">
+  <meta name="description" content="Website profil diri Mohamad Ramdan Oktaviyadi, mahasiswa Teknik Informatika Universitas Sebelas April.">
+  <title>Ramdan | Profil Diri</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#konten-utama">Lewati ke konten utama</a>
+  <div class="scroll-progress" aria-hidden="true"><span id="progress-bar"></span></div>
 
-    <h1>Portofolio Pribadi</h1>
-    <p>Selamat datang di website portofolio saya!</p>
+  <header class="site-header">
+    <a class="brand" href="#hero" aria-label="Kembali ke bagian hero">R<span>.</span></a>
+    <nav class="site-nav" aria-label="Navigasi utama">
+      <a href="#tentang">Tentang Saya</a>
+      <a href="#kutipan">Kutipan Favorit</a>
+      <a href="#pendidikan">Pendidikan</a>
+      <a href="#pengalaman">Pengalaman</a>
+      <a href="#hobi">Hobi</a>
+      <a href="#keahlian">Keahlian</a>
+      <a href="#musik">Musik</a>
+      <a href="#video">Video</a>
+    </nav>
+  </header>
 
-    <!-- Tentang Saya -->
-     <img src="profil.jpg"
-     alt="Foto Profil Saya"
-     width="180">
-    <h2>Tentang Saya</h2>
-    <p>Halo, nama saya <strong>Mohamad Ramdan Oktaviyadi</strong>.</p>
-    <p>Saya adalah mahasiswa yang sedang belajar HTML
-    dan pengembangan website.</p>
+  <main id="konten-utama" class="main-content">
+    <section class="page-section hero-section" id="hero" aria-labelledby="hero-title">
+      <div class="section-number" aria-hidden="true">01</div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">// HALO, SEKAI.</p>
+        <h1 id="hero-title">Salam Kenal,<br> Aku <span class="accent-text">Ramdan.</span></h1>
+        <p class="hero-description">
+          Selamat datang di website profil diri saya. Saya Mohamad Ramdan Oktaviyadi,
+          mahasiswa Teknik Informatika di Universitas Sebelas April. Website ini menjadi
+          tempat untuk memperkenalkan diri, perjalanan belajar, minat, dan hal-hal favorit saya.
+        </p>
+        <a class="text-link" href="#tentang">Kenali saya lebih jauh <span aria-hidden="true">↓</span></a>
+      </div>
+      <figure class="profile-figure reveal">
+        <img class="profile-photo" src="foto-profil.jpg" alt="Foto profil Mohamad Ramdan Oktaviyadi" width="420" height="525" fetchpriority="high">
+        <figcaption class="profile-caption"><span class="profile-status" aria-hidden="true"></span> Mahasiswa Teknik Informatika</figcaption>
+      </figure>
+      <div class="hero-mark" aria-hidden="true">R</div>
+    </section>
 
-    <!-- Kutipan -->
-    <h2>Kutipan Favorit</h2>
-    <blockquote>
-        "Impian seseorang tidak akan pernah berakhir!"
-— Marshall D. Teach / Kurohige (One Piece)
-    </blockquote>
+    <section class="page-section content-section" id="tentang" aria-labelledby="tentang-title">
+      <div class="section-number" aria-hidden="true">02</div>
+      <div class="section-inner reveal about-layout">
+        <div>
+          <p class="eyebrow">01 / PROFIL</p>
+          <h2 id="tentang-title">Tentang Saya</h2>
+        </div>
+        <div class="section-copy">
+          <p>
+            Nama saya <strong>Mohamad Ramdan Oktaviyadi</strong>. Saya sedang menempuh pendidikan
+            di bidang Teknik Informatika di Universitas Sebelas April. Saya tertarik mempelajari
+            teknologi, memahami cara kerja sebuah website, dan mengembangkan kemampuan melalui
+            latihan serta tugas perkuliahan.
+          </p>
+          <p>
+            Saya percaya bahwa kemampuan dibangun secara bertahap: mencoba, menemukan kesalahan,
+            memperbaikinya, lalu mengambil pelajaran dari proses tersebut. Profil ini akan terus
+            berkembang seiring pengalaman dan hal baru yang saya pelajari.
+          </p>
+          <dl class="profile-facts">
+            <div><dt>Nama</dt><dd>Mohamad Ramdan Oktaviyadi</dd></div>
+            <div><dt>Bidang</dt><dd>Teknik Informatika</dd></div>
+            <div><dt>Universitas</dt><dd>Universitas Sebelas April</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
 
-    <!-- Pendidikan -->
-    
-<!-- Tabel Riwayat Pendidikan dan Pengalaman -->
-<h2>Riwayat Pendidikan</h2>
+    <section class="page-section quote-section" id="kutipan" aria-labelledby="kutipan-title">
+      <div class="section-number" aria-hidden="true">03</div>
+      <div class="section-inner reveal narrow-inner">
+        <p class="eyebrow">02 / PEGANGAN</p>
+        <h2 id="kutipan-title">Kutipan Favorit</h2>
+        <figure class="quote-card">
+          <span class="quote-mark" aria-hidden="true">“</span>
+          <blockquote>
+            "Impian seseorang tidak akan pernah berakhir!" — Marshall D. Teach / Kurohige (One Piece)
+          </blockquote>
+          <figcaption>— Kutipan favorit</figcaption>
+        </figure>
+      </div>
+    </section>
 
-<table border="1" cellpadding="10">
-    <tr>
-        <th>Jenjang</th>
-        <th>Nama Sekolah</th>
-        <th>Tahun</th>
-    </tr>
-    <tr>
-        <td>Kuliah</td>
-        <td>Universitas Sebelas April</td>
-        <td>2026 - Sekarang</td>
-    </tr>
-</table>
+    <section class="page-section content-section" id="pendidikan" aria-labelledby="pendidikan-title">
+      <div class="section-number" aria-hidden="true">04</div>
+      <div class="section-inner">
+        <p class="eyebrow">03 / PERJALANAN AKADEMIK</p>
+        <h2 id="pendidikan-title">Riwayat Pendidikan</h2>
+        <p class="section-intro"></p>
+        <div class="table-wrapper">
+          <table class="data-table">
+            <caption>Riwayat pendidikan Mohamad Ramdan Oktaviyadi</caption>
+            <thead>
+              <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Jenjang</th>
+                <th scope="col">Nama Institusi</th>
+                <th scope="col">Tahun</th>
+                <th scope="col">Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Sekolah Dasar</td>
+                <td>Sekolah Dasar Negri Talun</td>
+                <td>2018</td>
+                <td>Pendidikan dasar</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>SMP / sederajat</td>
+                <td>SMP 4 sumedang</td>
+                <td>2021</td>
+                <td>Pendidikan menengah pertama</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>SMA / SMK / sederajat</td>
+                <td>SMA 2 sumedang</td>
+                <td>2024</td>
+                <td>Pendidikan menengah atas</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Perguruan Tinggi</td>
+                <td>Universitas Sebelas April</td>
+                <td>2024 – sekarang</td>
+                <td>Teknik Informatika</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
 
-<h2>Pengalaman dan Pembelajaran</h2>
+    <section class="page-section content-section alternate-section" id="pengalaman" aria-labelledby="pengalaman-title">
+      <div class="section-number" aria-hidden="true">05</div>
+      <div class="section-inner">
+        <p class="eyebrow">04 / PROSES BELAJAR</p>
+        <h2 id="pengalaman-title">Pengalaman dan Pembelajaran</h2>
+        <p class="section-intro"></p>
+        <div class="table-wrapper">
+          <table class="data-table">
+            <caption>Catatan pengalaman dan hal yang dipelajari</caption>
+            <thead>
+              <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Kegiatan / Pengalaman</th>
+                <th scope="col">Hal yang Dipelajari</th>
+                <th scope="col">Periode</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mengerjakan tugas perkuliahan</td>
+                <td>Mengatur waktu, memahami instruksi, dan menyelesaikan tugas secara bertahap.</td>
+                <td>Selama kuliah</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Membuat halaman website sederhana</td>
+                <td>Mengenal struktur HTML5, penggunaan CSS, dan tata letak halaman.</td>
+                <td>Selama kuliah</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Belajar mandiri dari materi digital</td>
+                <td>Melatih kemandirian, mencari solusi, dan mengevaluasi hasil pekerjaan.</td>
+                <td>Selama kuliah</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
 
-<table border="1" cellpadding="10">
-    <tr>
-        <th>No.</th>
-        <th>Kegiatan</th>
-        <th>Status</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>Belajar HTML</td>
-        <td>Selesai</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Membuat website portofolio</td>
-        <td>Selesai</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>Belajar Git dan GitHub</td>
-        <td>Dalam Pembelajaran</td>
-    </tr>
-</table>
+    <section class="page-section content-section" id="hobi" aria-labelledby="hobi-title">
+      <div class="section-number" aria-hidden="true">06</div>
+      <div class="section-inner reveal list-layout">
+        <div>
+          <p class="eyebrow">05 / WAKTU LUANG</p>
+          <h2 id="hobi-title">Hobi Saya</h2>
+        </div>
+        <div class="section-copy">
+          <p></p>
+          <ul class="styled-list">
+            <li><span class="list-index">01</span><span><strong>Belajar teknologi</strong><br>Mengeksplorasi hal baru seputar komputer dan website.</span></li>
+            <li><span class="list-index">02</span><span><strong>Mendengarkan musik</strong><br>Menikmati musik saat bersantai atau mengerjakan tugas.</span></li>
+            <li><span class="list-index">03</span><span><strong>Menonton video</strong><br>Mencari hiburan dan inspirasi dari konten yang menarik.</span></li>
+            <li><span class="list-index">04</span><span><strong>Memainkan Game</strong><br>Mencari hiburan.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    <!-- Hobi -->
-    <h2>Hobi Saya</h2>
-    <ul>
-        <li>Belajar teknologi</li>
-        <li>Mendengarkan musik</li>
-        <li>Bermain komputer</li>
-    </ul>
+    <section class="page-section content-section alternate-section" id="keahlian" aria-labelledby="keahlian-title">
+      <div class="section-number" aria-hidden="true">07</div>
+      <div class="section-inner reveal list-layout">
+        <div>
+          <p class="eyebrow">06 / KEMAMPUAN</p>
+          <h2 id="keahlian-title">Keahlian yang Dipelajari</h2>
+        </div>
+        <div class="section-copy">
+          <p></p>
+          <ul class="skill-list">
+            <li><span>HTML5 semantik</span><span class="skill-tag">Struktur</span></li>
+            <li><span>CSS dasar dan layout</span><span class="skill-tag">Desain</span></li>
+            <li><span>Membuat tabel dan daftar HTML</span><span class="skill-tag">Konten</span></li>
+            <li><span>Menyisipkan audio dan video</span><span class="skill-tag">Multimedia</span></li>
+            <li><span>Desain responsif</span><span class="skill-tag">Tampilan</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    <!-- Keahlian -->
-    <h2>Keahlian yang Dipelajari</h2>
-    <ol>
-        <li>HTML dasar</li>
-        <li>Membuat halaman website</li>
-        <li>Belajar pemrograman web</li>
-    </ol>
+    <section class="page-section content-section" id="musik" aria-labelledby="musik-title">
+      <div class="section-number" aria-hidden="true">08</div>
+      <div class="section-inner reveal media-layout">
+        <div>
+          <p class="eyebrow">07 / PEMUTAR AUDIO</p>
+          <h2 id="musik-title">Musik Favorit Saya</h2>
+          <p class="section-intro">“Lagu ini selalu mengingatkan saya kepada almarhum ibu saya, sosok yang sangat menyayangi anaknya tanpa syarat. Meskipun saya sering nakal dan melakukan kesalahan, kasih sayang beliau tidak pernah berkurang. Kini, beliau memang sudah tiada, tetapi cinta, kenangan, dan pengorbanannya akan selalu hidup di hati saya. Setiap kali mendengar lagu ini, saya merasa rindu ingin kembali merasakan kasih sayang beliau, meskipun hanya untuk sesaat. ❤️‍🩹”</p>
+        </div>
+        <div class="media-card">
+          <div class="media-symbol" aria-hidden="true">♫</div>
+          <div class="media-copy">
+            <h3>Musik Pilihan</h3>
+            <p>File lokal: <code>musik-favorit.mp3</code></p>
+            <audio controls preload="metadata">
+              <source src="musik-favorit.mp3" type="audio/mpeg">
+              Browser kamu tidak mendukung pemutar audio HTML5.
+            </audio>
+            <p class="media-note"><strong>musik-favorit.mp3</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Media Sosial -->
-    <h2>Media Sosial</h2>
-    <p>
-        <a href="https://www.instagram.com/ramzak12?utm_source=qr&obrf=bHNuMDN5MGt3ZWNj">
-            Kunjungi Instagram
+    <section class="page-section content-section alternate-section" id="video" aria-labelledby="video-title">
+      <div class="section-number" aria-hidden="true">09</div>
+      <div class="section-inner reveal media-layout">
+        <div>
+          <p class="eyebrow">08 / PEMUTAR VIDEO</p>
+          <h2 id="video-title">Video Favorit Saya</h2>
+          <p class="section-intro">“Video ini mengingatkan saya bahwa dunia beserta segala keindahannya merupakan bukti kebesaran Tuhan. Langit yang luas, alam yang menenangkan, dan setiap sudut keindahan yang sering kali kita abaikan, semuanya diciptakan dengan begitu sempurna. Terkadang, kita terlalu sibuk mengejar apa yang belum kita miliki hingga lupa mensyukuri keindahan yang telah ada di hadapan kita. Melalui video ini, saya belajar bahwa alam bukan hanya indah untuk dipandang, tetapi juga menjadi pengingat bahwa betapa besar kuasa Tuhan dan betapa berharganya kesempatan bagi kita untuk menikmati setiap ciptaan-Nya. 🍃🤍”</p>
+        </div>
+        <div class="media-card video-card">
+          <video controls preload="metadata">
+            <source src="video-favorit.mp4" type="video/mp4">
+            Browser kamu tidak mendukung pemutar video HTML5.
+          </video>
+          <div class="media-copy video-copy">
+            <h3>Video Pilihan</h3>
+            <p>File lokal: <code>video-favorit.mp4</code></p>
+            <p class="media-note"><strong>video-favorit.mp4</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="footer-inner">
+      <div>
+        <p class="eyebrow">10 / TERHUBUNG</p>
+        <h2>Terima kasih sudah berkunjung.</h2>
+        <p class="footer-note">Temukan saya melalui media sosial.</p>
+      </div>
+      <address class="social-links">
+        <a class="instagram-link" href="https://www.instagram.com/ramzak12/" target="_blank" rel="noopener noreferrer" aria-label="Buka Instagram Ramdan di tab baru">
+          <span class="instagram-icon" aria-hidden="true">◎</span>
+          Instagram <span aria-hidden="true">↗</span>
         </a>
-    </p>
-
- 
-<!-- Audio Favorit -->
-<h2>Musik Favorit Saya</h2>
-
-<audio controls>
-    <source src="./musik.mp3" type="audio/mpeg">
-    Browser Anda tidak mendukung audio.
-</audio>
-
-
-
-<!-- Video Karya Saya -->
-<h2>Video Karya Saya</h2>
-
-<p>
-    Klik tombol di bawah ini untuk menonton video
-    karya saya di YouTube.
-</p>
-
-<a href="https://www.youtube.com/watch?v=n_PxJ2PyecI"
-   target="_blank"
-   rel="noopener noreferrer">
-    <button type="button">Tonton Video di YouTube</button>
-</a>
-
-
-
-<!-- Video Favorit -->
-<h2>Video Favorit Saya</h2>
-
-<video width="400" controls>
-    <source src="video.mp4" type="video/mp4">
-    Browser Anda tidak mendukung video.
-</video>
-
-<!-- Footer -->
-
-    <hr>
-    <p>&copy; 2026 Portofolio Pribadi</p>
-
+      </address>
+    </div>
+    <p class="copyright">© <span>Mohamad Ramdan Oktaviyadi</span> · Profil Diri</p>
+  </footer>
 </body>
 </html>
